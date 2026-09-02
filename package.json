@@ -1,0 +1,43 @@
+{
+  "name": "health-with-love-family-dashboard",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vinext dev",
+    "build": "vinext build",
+    "start": "vinext start",
+    "lint": "eslint .",
+    "dev:vinext": "vinext dev --port 3001",
+    "build:vinext": "vinext build",
+    "start:vinext": "wrangler dev --config dist/server/wrangler.json",
+    "deploy:vinext": "vinext-cloudflare deploy --config dist/server/wrangler.json"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mdi/js": "^7.4.47",
+    "@vinext/cloudflare": "^1.0.0-beta.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-server-dom-webpack": "^19.1.1",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.54.2",
+    "@eslint/js": "^9.34.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.2",
+    "@vitejs/plugin-rsc": "latest",
+    "eslint": "^9.34.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.41.0",
+    "vinext": "latest",
+    "vite": "latest",
+    "wrangler": "^4.127.1"
+  }
+}
